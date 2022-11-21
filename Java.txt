@@ -1,0 +1,26 @@
+Java Q&A:
+1.can we override start method in java?
+Yes, we can override the start() method of a Thread class in Java. 
+We must call the super. start() method to create a new thread and need to call run() method in that newly created thread.
+
+2.Can we override a static method? 
+No, we cannot override static methods because method overriding is based on dynamic binding at 
+runtime and the static methods are bonded using static binding at compile time. 
+
+3.can we override private method in java?
+You cannot override a private or static method in Java. 
+If you create a similar method with same return type and same method arguments in child class then it will hide the super class method,
+this is known as method hiding.
+
+4.can we override main method in java?
+What happens if we override main method in Java?
+Java main() Method Overloading
+
+Without the main() method, JVM will not execute the program. Syntax: public static void main(String args[])
+
+5.can we create static constructor in java?
+No, we cannot define a static constructor in Java,
+If we are trying to define a constructor with the static keyword a compile-time error will occur.
+In general, static means class level.
+A constructor will be used to assign initial values for the instance variables.
+
